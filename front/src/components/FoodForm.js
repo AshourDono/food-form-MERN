@@ -3,7 +3,9 @@ import axios from 'axios';
 
 function FoodForm() {
   const initialFormData = {
-    name: '',
+    nameEn: '',
+    nameAr: '',
+    category: '',
     refuse: '',
     water: '',
     energy: '',
@@ -32,7 +34,9 @@ function FoodForm() {
     e.preventDefault();
     let formData = new FormData();
 
-    formData.append('name', data.name);
+    formData.append('nameEn', data.nameEn);
+    formData.append('nameAr', data.nameAr);
+    formData.append('category', data.category);
     formData.append('refuse', data.refuse);
     formData.append('water', data.water);
     formData.append('energy', data.energy);
@@ -71,20 +75,45 @@ function FoodForm() {
   };
   return (
     <>
-      <form onSubmit={handleSubmit} className="container mt-2">
+      <form onSubmit={handleSubmit} className='container mt-2'>
         <div className='row'>
           <div className='form-outline mb-2 col'>
-            <label className='form-label fs-4 fs-4' htmlFor='name'>
-              Name
+            <label className='form-label fs-4 fs-4' htmlFor='nameEn'>
+              NameEn
             </label>
             <input
-              name='name'
+              name='nameEn'
               type='text'
               className='form-control w-75 mx-auto'
               onChange={handleChange}
             />
           </div>
+          <div className='form-outline mb-2 col'>
+            <label className='form-label fs-4 fs-4' htmlFor='nameAr'>
+              NameAr
+            </label>
+            <input
+              name='nameAr'
+              type='text'
+              className='form-control w-75 mx-auto'
+              onChange={handleChange}
+            />
+          </div>
+        </div>
 
+        <div className='row'>
+          <div className='form-outline mb-2 col'>
+            <label className='form-label fs-4 fs-4' htmlFor='category'>
+              Category
+            </label>
+            <input
+              name='category'
+              type='text'
+              step='0.01'
+              className='form-control w-75 mx-auto'
+              onChange={handleChange}
+            />
+          </div>
           <div className='form-outline mb-2 col'>
             <label className='form-label fs-4 fs-4' htmlFor='refuse'>
               Refuse
@@ -298,7 +327,8 @@ function FoodForm() {
             </label>
             <input
               name='vitaminA'
-              type='text'
+              type='number'
+              step='0.01'
               className='form-control w-75 mx-auto'
               onChange={handleChange}
             />

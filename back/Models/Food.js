@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
 
 const foodSchema = new mongoose.Schema({
-  name: { type: String },
+  nameEn: { type: String },
+  nameAr: { type: String },
+  category: { type: String },
   refuse: { type: Number },
   water: { type: Number },
   energy: { type: Number },
@@ -18,7 +20,7 @@ const foodSchema = new mongoose.Schema({
   iron: { type: Number },
   zinc: { type: Number },
   copper: { type: Number },
-  vitaminA: { type: String },
+  vitaminA: { type: Number },
   vitaminC: { type: Number },
   thiamin: { type: Number },
   riboflavin: { type: Number },

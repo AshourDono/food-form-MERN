@@ -2,7 +2,9 @@ const Food = require('./../Models/Food');
 
 module.exports.createFood = async (req, res) => {
   let food = new Food({
-    name: req.body.name,
+    nameEn: req.body.nameEn,
+    nameAr: req.body.nameAr,
+    category: req.body.category,
     refuse: req.body.refuse,
     water: req.body.water,
     energy: req.body.energy,

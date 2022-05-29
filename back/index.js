@@ -16,7 +16,7 @@ const port = process.env.PORT || 8000;
 
 mongoose
   .connect(
-    'mongodb+srv://m220student:m220password@mflix.nkand.mongodb.net/foods?retryWrites=true&w=majority',
+    'mongodb+srv://admin:admin@nutritionsystem.rdmpf.mongodb.net/final?retryWrites=true&w=majority',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
