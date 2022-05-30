@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { toast, ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function FoodForm() {
   const initialFormData = {
@@ -64,10 +67,26 @@ function FoodForm() {
         Accept: 'application/json',
       })
       .then(res => {
-        console.log(res.data.result);
+        toast.success(`${res.data.result.nameAr} اتعمل يا بيه`, {
+          position: 'top-right',
+          autoClose: 250,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       })
       .catch(err => {
-        console.error(err);
+        toast.error(err.message + '', {
+          position: 'top-right',
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       });
   };
   const handleChange = e => {
@@ -75,6 +94,17 @@ function FoodForm() {
   };
   return (
     <>
+      <ToastContainer
+        position='top-right'
+        autoClose={250}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable
+        pauseOnHover
+      />
       <form onSubmit={handleSubmit} className='container mt-2'>
         <div className='row'>
           <div className='form-outline mb-2 col'>
