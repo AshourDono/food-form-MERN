@@ -111,9 +111,9 @@ function FoodForm() {
         draggable
         pauseOnHover
       />
-      <form onSubmit={handleSubmit} className='container mt-2' ref={refForm}>
+      <form onSubmit={handleSubmit} className='container mt-1' ref={refForm}>
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='nameEn'>
               NameEn
             </label>
@@ -124,7 +124,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='nameAr'>
               NameAr
             </label>
@@ -138,7 +138,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='category'>
               Category
             </label>
@@ -150,7 +150,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='refuse'>
               Refuse
             </label>
@@ -162,7 +162,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='water'>
               Water
             </label>
@@ -177,7 +177,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='energy'>
               Energy
             </label>
@@ -189,7 +189,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='protein'>
               Protein
             </label>
@@ -201,7 +201,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='fat'>
               Fat
             </label>
@@ -216,7 +216,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='ash'>
               Ash
             </label>
@@ -228,7 +228,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='fiber'>
               Fiber
             </label>
@@ -240,7 +240,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='carbohydrate'>
               Carbohydrate
             </label>
@@ -255,7 +255,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='sodium'>
               sodium
             </label>
@@ -267,7 +267,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='potassium'>
               potassium
             </label>
@@ -279,7 +279,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='calcium'>
               calcium
             </label>
@@ -294,7 +294,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='phosphorus'>
               phosphorus
             </label>
@@ -306,7 +306,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4 fs-4' htmlFor='magnisum'>
               magnisum
             </label>
@@ -318,7 +318,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4' htmlFor='iron'>
               iron
             </label>
@@ -333,7 +333,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4' htmlFor='zinc'>
               zinc
             </label>
@@ -345,7 +345,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4' htmlFor='copper'>
               copper
             </label>
@@ -357,7 +357,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-2 col'>
+          <div className='form-outline mb-1 col'>
             <label className='form-label fs-4' htmlFor='vitaminA'>
               vitaminA
             </label>
@@ -372,7 +372,7 @@ function FoodForm() {
         </div>
 
         <div className='row'>
-          <div className='form-outline mb-3 col'>
+          <div className='form-outline mb-2 col'>
             <label className='form-label fs-4' htmlFor='vitaminC'>
               vitaminC
             </label>
@@ -384,7 +384,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-3 col'>
+          <div className='form-outline mb-2 col'>
             <label className='form-label fs-4' htmlFor='thiamin'>
               thiamin
             </label>
@@ -396,7 +396,7 @@ function FoodForm() {
               onChange={handleChange}
             />
           </div>
-          <div className='form-outline mb-3 col'>
+          <div className='form-outline mb-2 col'>
             <label className='form-label fs-4' htmlFor='riboflavin'>
               riboflavin
             </label>
@@ -410,7 +410,7 @@ function FoodForm() {
           </div>
         </div>
         <div className='row'>
-          <button type='submit' className='btn btn-dark btn-block mb-4 col-2 mx-auto'>
+          <button type='submit' className='btn btn-dark btn-block mb-2 col-2 mx-auto'>
             Create Food Item
           </button>
         </div>
