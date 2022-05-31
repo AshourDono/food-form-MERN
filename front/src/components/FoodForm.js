@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
 function FoodForm() {
+  const refForm = useRef(null);
+
   const initialFormData = {
     nameEn: '',
     nameAr: '',
@@ -77,6 +79,9 @@ function FoodForm() {
           progress: undefined,
         });
       })
+      .then(() => {
+        refForm.current.reset();
+      })
       .catch(err => {
         toast.error(err.message + '', {
           position: 'top-right',
@@ -88,6 +93,7 @@ function FoodForm() {
           progress: undefined,
         });
       });
+    // e.target.reset(); without useRef
   };
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -105,7 +111,7 @@ function FoodForm() {
         draggable
         pauseOnHover
       />
-      <form onSubmit={handleSubmit} className='container mt-2'>
+      <form onSubmit={handleSubmit} className='container mt-2' ref={refForm}>
         <div className='row'>
           <div className='form-outline mb-2 col'>
             <label className='form-label fs-4 fs-4' htmlFor='nameEn'>
