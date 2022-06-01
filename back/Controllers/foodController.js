@@ -17,7 +17,7 @@ module.exports.createFood = async (req, res) => {
     potassium: req.body.potassium,
     calcium: req.body.calcium,
     phosphorus: req.body.phosphorus,
-    magnisum: req.body.magnisum,
+    magnesium: req.body.magnesium,
     iron: req.body.iron,
     zinc: req.body.zinc,
     copper: req.body.copper,

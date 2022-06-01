@@ -23,7 +23,7 @@ function FoodForm() {
     potassium: '',
     calcium: '',
     phosphorus: '',
-    magnisum: '',
+    magnesium: '',
     iron: '',
     zinc: '',
     copper: '',
@@ -54,7 +54,7 @@ function FoodForm() {
     formData.append('potassium', data.potassium);
     formData.append('calcium', data.calcium);
     formData.append('phosphorus', data.phosphorus);
-    formData.append('magnisum', data.magnisum);
+    formData.append('magnesium', data.magnesium);
     formData.append('iron', data.iron);
     formData.append('zinc', data.zinc);
     formData.append('copper', data.copper);
