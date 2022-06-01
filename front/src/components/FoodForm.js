@@ -307,11 +307,11 @@ function FoodForm() {
             />
           </div>
           <div className='form-outline mb-1 col'>
-            <label className='form-label fs-4 fs-4' htmlFor='magnisum'>
+            <label className='form-label fs-4 fs-4' htmlFor='magnesium'>
               magnisum
             </label>
             <input
-              name='magnisum'
+              name='magnesium'
               type='number'
               step='0.01'
               className='form-control w-75 mx-auto'
