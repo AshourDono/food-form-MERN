@@ -15,7 +15,7 @@ const foodSchema = new mongoose.Schema({
   sodium: { type: Number },
   potassium: { type: Number },
   calcium: { type: Number },
-  calcium: { type: Number },
+  phosphorus: { type: Number },
   magnisum: { type: Number },
   iron: { type: Number },
   zinc: { type: Number },
